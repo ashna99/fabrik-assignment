@@ -4,6 +4,7 @@ const path = require('path');
 const app = express();
 
 app.use(express.static(path.join(__dirname,'../dist/fabrik-assignment')));
+console.log("server started");
 
 app.get('/*', function(req,res) {
     
