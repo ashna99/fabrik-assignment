@@ -1,0 +1,22 @@
+<div class="file-upload-container">
+  <div class="file-upload-header">
+    <span> Name</span>
+    <span> File Type</span>
+    <span> Uploaded Time</span>
+    <div class = "file-upload">
+      <input
+        type="file"
+        class="file-input"
+        (change)="onFileSelected($event)"
+        #fileUpload
+      />      
+        <button
+          color="primary"
+          class="upload-btn"
+          (click)="fileUpload.click()"
+        > Upload
+        </button>
+  </div>
+  <div class="file-upload-content"></div>
+  <div>{{response}}</div>
+</div>
