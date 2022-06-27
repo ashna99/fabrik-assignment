@@ -1,6 +1,7 @@
 1. For locally running project use npm run dev 
 2. Used Express for backend services creation, AWS S3 for storing files and AWS rds for storing files data.
 3. Used Heroku for deployment of the app.
+4. .env file is not committed here since it contains aws and database credentials. 
 
 # FabrikAssignment
 
