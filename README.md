@@ -1,3 +1,7 @@
+1. For locally running project use npm run dev 
+2. Used Express for backend services creation, AWS S3 for storing files and AWS rds for storing files data.
+3. Used Heroku for deployment of the app.
+
 # FabrikAssignment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
