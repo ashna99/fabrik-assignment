@@ -19,8 +19,8 @@ const listFilesService = async () => {
           });
         }
         connection.query(
-          `SELECT file_id AS fileId, file_name AS fileName, file_type AS fileType,
-          file_url AS fileUrl,uploaded_time AS uploadedTime FROM ${LOG_FILE_DATA_TABLE}`,
+          `SELECT  file_name AS name, file_type AS type,
+          file_url AS url,uploaded_time AS uploadedTime FROM ${LOG_FILE_DATA_TABLE}`,
           [],
           (listFilesServiceError, files) => {
             connection.release();

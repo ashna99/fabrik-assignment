@@ -1,0 +1,28 @@
+<div class="m-3">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col" sortable="name">File Name</th>
+          <th scope="col" sortable="type">File Type</th>
+          <th scope="col" sortable="url">File Url</th>
+          <th scope="col" sortable="uploadedTime">Uploaded Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let file of files.slice(0, filesPerPage); let i = index ">
+          <td>
+            {{ file.name }}
+          </td>
+          <td>{{ file.type }}</td>
+          <td>{{ file.url }}</td>
+          <td>{{ file.uploadedTime }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <ngb-pagination [collectionSize]="totalFiles" [(page)]="page" [maxSize]="5" [boundaryLinks]="true"
+      [pageSize]=" filesPerPage" class="d-flex justify-content-center"></ngb-pagination>
+  </div>
+  <router-outlet></router-outlet>

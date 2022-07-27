@@ -35,12 +35,12 @@ router.get("/api/files", async (req, res) => {
     if (listFilesResponse.error) {  
       res.send({
         error: listFilesResponse.error,
-        payload: {},
+        data: [],
       });
     } else {
       res.send({
         error: false,
-        payload: listFilesResponse.payload
+        data: listFilesResponse.payload
       });
     }
   } catch (error) {
