@@ -3,6 +3,9 @@
 3. Used Heroku for deployment of the app.
 4. .env file is not committed here since it contains aws and database credentials. 
 
+APIs to use:
+1. GET : https://fabrik-assign.herokuapp.com/api/files
+2. POST: https://fabrik-assign.herokuapp.com/api/file-upload   : body - formdata: key -file , value: <your-3d-file>
 # FabrikAssignment
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
