@@ -6,16 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ListFilterPipe } from './pipes/listFilterPipe';
 import { AppComponent } from './app.component';
-import { FileUploadComponent } from './file-upload/file-upload.component';
-import { FileUploadService } from './services/file-upload.service';
-
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListFilterPipe,
-    FileUploadComponent,
+    ListFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -25,9 +20,7 @@ import { FileUploadService } from './services/file-upload.service';
     FormsModule
   ],
  
-  providers: [
-    FileUploadService
-   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
